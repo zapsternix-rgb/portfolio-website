@@ -1,104 +1,71 @@
 export default function Hero() {
   return (
-    <section
-      id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
-    >
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800" />
-
-      <div className="absolute inset-0 opacity-30 dark:opacity-20">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-400 rounded-full blur-3xl animate-pulse animation-delay-2000" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-pink-300 rounded-full blur-3xl animate-pulse animation-delay-4000" />
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#FAFAF8] dark:bg-[#0A0A0A]">
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-[#005EB8]/5 dark:border-[#005EB8]/10" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full border border-[#D4D4D0]/30 dark:border-white/[0.03]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] rounded-full border border-[#D4D4D0]/20 dark:border-white/[0.02]" />
       </div>
 
-      <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-1 h-1 bg-blue-500 rounded-full" />
-        <div className="absolute top-1/3 right-1/4 w-1.5 h-1.5 bg-purple-500 rounded-full" />
-        <div className="absolute bottom-1/3 left-1/3 w-1 h-1 bg-pink-500 rounded-full" />
-        <div className="absolute top-2/3 right-1/3 w-2 h-2 bg-blue-400 rounded-full" />
-        <div className="absolute bottom-1/4 right-1/4 w-1 h-1 bg-purple-400 rounded-full" />
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-[20%] right-[15%] w-1.5 h-1.5 bg-[#005EB8]/30 rounded-full animate-pulse-subtle" />
+        <div className="absolute top-[40%] left-[10%] w-1 h-1 bg-[#C0C0BA]/50 rounded-full animate-pulse-subtle animation-delay-1000" />
+        <div className="absolute bottom-[30%] right-[20%] w-1 h-1 bg-[#005EB8]/20 rounded-full animate-pulse-subtle animation-delay-2000" />
       </div>
 
-      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
-        <div className="mb-8 inline-block">
-          <div className="relative">
-            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white shadow-2xl mx-auto ring-2 ring-blue-500/20">
-              <img
-                src="https://api.dicebear.com/7.x/avataaars/svg?seed=Manav&backgroundColor=blue"
-                alt="Manav"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="absolute -bottom-2 -right-2 w-10 h-10 bg-green-400 rounded-full border-4 border-white dark:border-gray-900 flex items-center justify-center shadow-lg">
-              <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-              </svg>
-            </div>
+      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+        <div className="animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#F5F5F0] dark:bg-white/[0.04] rounded-full text-[11px] font-semibold uppercase tracking-[0.08em] text-[#86868B] mb-8 border border-black/[0.04] dark:border-white/[0.06]">
+            <span className="w-1.5 h-1.5 bg-[#005EB8] rounded-full" />
+            Available for projects
           </div>
         </div>
 
-        <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-full text-sm text-gray-600 dark:text-gray-300 mb-6 border border-gray-200/50 dark:border-gray-700/30">
-          <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-          Available for projects
-        </div>
-
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-          Hi, I'm{" "}
-          <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">
-            Manav
-          </span>
+        <h1 className="hero-heading mb-4 text-balance animate-fade-in-up animation-delay-500">
+          Full-stack developer<br />
+          <span className="text-[#86868B] font-light">crafting</span>{" "}
+          <span className="text-[#005EB8]">premium</span>{" "}
+          <span className="text-[#86868B] font-light">digital</span>
+          <br />
+          experiences
         </h1>
 
-        <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-4 font-light">
-          C/C++ · Python · JavaScript · Full-Stack Developer
+        <p className="text-[17px] md:text-[19px] text-[#86868B] max-w-xl mx-auto leading-relaxed mb-10 animate-fade-in-up animation-delay-1000 text-balance">
+          C/C++ · Python · JavaScript — I build across the stack, from systems
+          programming to modern web applications with clean architecture.
         </p>
 
-        <p className="text-base md:text-lg text-gray-500 dark:text-gray-500 mb-10 max-w-2xl mx-auto leading-relaxed">
-          I build performant software across the stack — from low-level systems
-          in C/C++ to modern web apps with React and Python backends.
-        </p>
-
-        <div className="flex items-center justify-center gap-4 flex-wrap">
-          <a
-            href="#projects"
-            className="group relative px-8 py-3.5 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-medium shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/30 transition-all duration-300 overflow-hidden"
-          >
-            <span className="relative z-10">View My Work</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="flex items-center justify-center gap-3 animate-fade-in-up animation-delay-1500">
+          <a href="#projects" className="btn-primary text-[13px]">
+            View My Work
           </a>
-          <a
-            href="#contact"
-            className="px-8 py-3.5 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-full font-medium hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300"
-          >
+          <a href="#contact" className="btn-secondary text-[13px]">
             Get In Touch
           </a>
         </div>
 
-        <div className="flex items-center justify-center gap-6 mt-12">
+        <div className="flex items-center justify-center gap-5 mt-16 animate-fade-in animation-delay-2000">
           {[
-            { href: "https://github.com/zapsternix-rgb", label: "GitHub", icon: "M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" },
-            { href: "https://linkedin.com/in/zapsternix-rgb", label: "LinkedIn", icon: "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" },
-            { href: "mailto:hello@zapsternix.dev", label: "Email", icon: "M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" },
-          ].map((social) => (
+            { href: "https://github.com/zapsternix-rgb", label: "GitHub" },
+            { href: "https://linkedin.com/in/zapsternix-rgb", label: "LinkedIn" },
+            { href: "mailto:hello@zapsternix.dev", label: "Email" },
+          ].map((s) => (
             <a
-              key={social.label}
-              href={social.href}
+              key={s.label}
+              href={s.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative w-12 h-12 flex items-center justify-center bg-white dark:bg-gray-800 rounded-full shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200/50 dark:border-gray-700/30"
+              className="text-[13px] font-medium text-[#86868B] hover:text-[#1D1D1F] dark:hover:text-[#F5F5F0] transition-colors"
             >
-              <svg className="w-5 h-5 text-gray-600 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" fill="currentColor" viewBox="0 0 24 24">
-                <path d={social.icon} />
-              </svg>
+              {s.label}
             </a>
           ))}
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-float-subtle">
+        <svg className="w-4 h-4 text-[#C0C0BA]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
         </svg>
       </div>
     </section>
